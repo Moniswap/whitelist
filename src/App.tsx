@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WalletContext from "./contexts/wallet";
+import Footer from "./ui/Footer";
+import Header from "./ui/Header";
+import Main from "./views/Main";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WalletContext>
+      <div className="min-h-screen w-screen overflow-x-hidden flex flex-col justify-start items-center gap-5 bg-[#000004] font-inter">
+        <Header />
+        <div className="self-stretch overflow-auto mt-auto">
+          <Main />
+        </div>
+        <Footer />
+      </div>
+    </WalletContext>
   );
 }
 
