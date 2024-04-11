@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  app:
+    container_name: whitelisting-app
+    hostname: localhost
+    build:
+      context: .
+      dockerfile: Dockerfile
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - 12300:12300
