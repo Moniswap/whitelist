@@ -1,4 +1,4 @@
-import { useAddToWhitelist, useCountParticipants, useIsOnWhitelist } from "@/hooks/firebase";
+import { useAddToWhitelist, useCountParticipants, useIsOnWhitelist } from "@/hooks/supabase";
 import BorderlessArtboard from "@/ui/BorderlessArtBoard";
 import { useAccount } from "wagmi";
 import Countdown from "react-countdown";
