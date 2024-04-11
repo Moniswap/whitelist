@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.24",
     "buffer": "^6.0.3",
     "daisyui": "^4.10.1",
+    "express": "^4.19.2",
     "firebase": "^10.10.0",
     "react": "^18.2.0",
     "react-countdown": "^2.3.5",
@@ -30,6 +31,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
+    "prod": "node server.js",
     "format": "prettier --write **/**/*{.java,.js,.json,.ts,.tsx,.handlebars,.css,Dockerfile,.sh,.yml,.nginx,.md,.html,.mjs} --plugin=/usr/lib/node_modules/prettier-plugin-java/dist/index.js --plugin=/usr/lib/node_modules/prettier-plugin-sh/lib/index.js --plugin=/usr/lib/node_modules/prettier-plugin-java/dist/index.js --plugin=/usr/lib/node_modules/prettier-plugin-nginx/dist/index.js"
   },
   "eslintConfig": {
